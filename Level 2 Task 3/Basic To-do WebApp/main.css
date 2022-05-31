@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+    transition: all .2 linear;   
+}
+body{
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    background: linear-gradient(to bottom,#68EACC 0%,#497BE8 100%);
+}
+.mainContainer{
+    margin: 0 auto;
+    min-width: 530px;
+    width: 50%;
+    background-color: #212130;
+    border-radius: 2rem;
+    padding: 2.5rem;
+}
+
+.mainContainer header{
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: rgb(35, 95, 95);
+}
+.mainContainer .inputContainer{
+    display: flex;
+    height: 2.5rem;
+    width: 100%;
+    margin: 1rem 0;
+    /* align-items: center;
+    justify-content: space-between; */
+}
+
+.inputContainer input{
+    width: 80%;
+    height: 100%;
+    border: 1px solid rgb(102, 100, 100);
+    font-size: 1.2rem;
+    border-radius: .2rem;
+    padding-left: .8rem;
+    outline: none;
+    background: gray;
+    color: #fefefe;
+}
+.inputContainer input::placeholder{
+    color: whitesmoke;
+    opacity: .8;
+}
+.inputContainer button{
+    height: 100%;
+    border: none;
+    outline: none;
+    background: #1b72d4;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: .2rem;
+    margin-left: .5rem;
+    opacity: .6;
+    pointer-events: none;
+}
+.inputContainer button.active{
+    opacity: 1;
+    pointer-events: auto;
+}
+.addBtn{
+    width: 3rem;
+}
+.inputContainer #addTaskBtn i{
+    color: #fff;
+    font-size: 1.5rem;
+}
+.clearAll{  
+    font-size: 3rem;
+    width: 7rem;
+    padding: .1rem .5rem;
+    color: #fff;   
+}
+
+
+.mainContainer .List{
+    max-height: 15rem;
+    overflow-y: auto;
+    overflow-x: hidden;
+} 
+li{
+    list-style: none;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    position: relative;
+    margin-bottom: .5rem;
+    padding: 0 .5rem 0 0;
+    /* background: rgb(46, 170, 42); */
+    border-radius: .2rem;
+    text-transform: capitalize;
+    color: #dad8d8;
+    width: 100%;
+}
+
+.text{
+    /* display: block; */
+    font-size: 1.25rem;
+    width: 85%;
+    /* padding: .2rem; */
+    padding: .2rem 0 .2rem .5rem;
+    border-radius: .2rem;
+    outline: none;
+    background-color: #5c5b5b;
+    /* background: none; */
+    color: #eee;
+    cursor: default;
+    text-transform: capitalize;
+    transition: .4s;
+}
+
+.edtBtn,.delBtn{
+    position: absolute;
+    top: 0rem;
+    right: 0rem;
+    width: 2.5rem;
+    background-color: rgb(211, 39, 39);
+    text-align: center;
+    border-radius: 0.2rem;
+    cursor: pointer;
+    margin-right: .2rem;
+}
+.edtBtn{
+    position: absolute;
+    right: 3rem;   
+}
+.List::-webkit-scrollbar{
+    width: .5rem;
+}
+.List::-webkit-scrollbar-track{
+    background: #212130;
+}
+.List::-webkit-scrollbar-thumb{
+    background: #5c5b5b;
+}
+.edtBtn i,.delBtn i{    
+    /* color: #FFF; */
+    font-size: 1.125rem;
+    color: #212130;
+}
+
+button:hover, .edtBtn:hover,.delBtn:hover{
+    transform: scale(1.1);
+}
+/*  */
+/* .footer{
+    display: flex;
+    width: 100%;
+    margin-top: 1rem;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: .5rem;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+}
+.footer span{
+    color: rgb(35, 95, 95);
+    font-weight: bold;
+} */
+
+/* 
+.footer button.active{
+    opacity: 1;
+    pointer-events: auto;
+} */
+
+

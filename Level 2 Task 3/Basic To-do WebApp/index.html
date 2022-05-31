@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do Web App</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+</head>
+
+<body>
+    <div class="mainContainer">
+
+        <header>Todo App</header>
+        <div class="inputContainer">
+
+            <input type="text" placeholder="Add New Task" id="newTaskInput">
+            <button title="Add Task" id="addTaskBtn" class="addBtn" > <i class="fas fa-plus"></i> </button>
+            <button title="Delete All" id="delAllBtn" onclick="deleteAll()" class="clearAll"> Clear list </button>
+
+        </div>
+
+
+        <ul class="List" id="List">
+            <!-- Data comes from local storage  <i class="fas fa-file-check"></i>-->
+
+            <!-- <li class="listEl">
+                    <input type="text" class="text"  readonly>
+                    <span class="edtBtn" title="Edit"> <i class="fas fa-pen-to-square"></i> </span>
+                    <span class="delBtn" title="Delete"> <i class="fas fa-trash"></i></span>
+                </li> -->
+
+        </ul>
+
+<!-- 
+        <div class="footer">
+            <span> your pending tasks: <span class="pending"></span> </span>
+            <button title="Delete All" id="delAllBtn" onclick="deleteAll()" class="clearAll"> Remove All </button>
+        </div> -->
+
+    </div>
+
+</body>
+<script src="main.js"></script>
+<!-- <script src="app.js"></script> -->
+
+</html>
