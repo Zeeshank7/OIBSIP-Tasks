@@ -1,21 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600&display=swap');
-
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Nunito', sans-serif;
-    transition: all .2 linear;   
+    transition: all .2 linear;
 }
-body{
+
+body {
     display: grid;
     place-items: center;
     height: 100vh;
     width: 100%;
     overflow: hidden;
-    background: linear-gradient(to bottom,#68EACC 0%,#497BE8 100%);
+    background: linear-gradient(to bottom, #68EACC 0%, #497BE8 100%);
 }
-.mainContainer{
+
+.mainContainer {
     margin: 0 auto;
     min-width: 530px;
     width: 50%;
@@ -24,12 +25,13 @@ body{
     padding: 2.5rem;
 }
 
-.mainContainer header{
+.mainContainer header {
     font-size: 2.5rem;
     font-weight: bold;
     color: rgb(35, 95, 95);
 }
-.mainContainer .inputContainer{
+
+.mainContainer .inputContainer {
     display: flex;
     height: 2.5rem;
     width: 100%;
@@ -38,8 +40,8 @@ body{
     justify-content: space-between; */
 }
 
-.inputContainer input{
-    width: 80%;
+.inputContainer input {
+    width: 100%;
     height: 100%;
     border: 1px solid rgb(102, 100, 100);
     font-size: 1.2rem;
@@ -49,11 +51,13 @@ body{
     background: gray;
     color: #fefefe;
 }
-.inputContainer input::placeholder{
+
+.inputContainer input::placeholder {
     color: whitesmoke;
     opacity: .8;
 }
-.inputContainer button{
+
+.inputContainer button {
     height: 100%;
     border: none;
     outline: none;
@@ -65,31 +69,36 @@ body{
     opacity: .6;
     pointer-events: none;
 }
-.inputContainer button.active{
+
+.inputContainer button.active {
     opacity: 1;
     pointer-events: auto;
 }
-.addBtn{
+
+.addBtn {
     width: 3rem;
 }
-.inputContainer #addTaskBtn i{
+
+.inputContainer #addTaskBtn i {
     color: #fff;
     font-size: 1.5rem;
 }
-.clearAll{  
+
+
+/* .clearAll {
     font-size: 3rem;
     width: 7rem;
     padding: .1rem .5rem;
-    color: #fff;   
-}
+    color: #fff;
+} */
 
-
-.mainContainer .List{
+.mainContainer .List {
     max-height: 15rem;
     overflow-y: auto;
     overflow-x: hidden;
-} 
-li{
+}
+
+li {
     list-style: none;
     height: 2.5rem;
     line-height: 2.5rem;
@@ -103,7 +112,7 @@ li{
     width: 100%;
 }
 
-.text{
+.text {
     /* display: block; */
     font-size: 1.25rem;
     width: 85%;
@@ -119,7 +128,8 @@ li{
     transition: .4s;
 }
 
-.edtBtn,.delBtn{
+.edtBtn,
+.delBtn {
     position: absolute;
     top: 0rem;
     right: 0rem;
@@ -130,48 +140,71 @@ li{
     cursor: pointer;
     margin-right: .2rem;
 }
-.edtBtn{
+
+.edtBtn {
     position: absolute;
-    right: 3rem;   
+    right: 3rem;
 }
-.List::-webkit-scrollbar{
+
+.List::-webkit-scrollbar {
     width: .5rem;
 }
-.List::-webkit-scrollbar-track{
+
+.List::-webkit-scrollbar-track {
     background: #212130;
 }
-.List::-webkit-scrollbar-thumb{
+
+.List::-webkit-scrollbar-thumb {
     background: #5c5b5b;
 }
-.edtBtn i,.delBtn i{    
+
+.edtBtn i,
+.delBtn i {
     /* color: #FFF; */
     font-size: 1.125rem;
     color: #212130;
 }
 
-button:hover, .edtBtn:hover,.delBtn:hover{
+button:hover,
+.edtBtn:hover,
+.delBtn:hover {
     transform: scale(1.1);
 }
+
+
 /*  */
-/* .footer{
+
+.footer {
     display: flex;
     width: 100%;
     margin-top: 1rem;
     justify-content: space-between;
     align-items: center;
-    padding-left: .5rem;
+    padding-left: 0.5rem;
     font-size: 1.5rem;
     text-transform: capitalize;
 }
-.footer span{
+
+.footer span {
     color: rgb(35, 95, 95);
     font-weight: bold;
-} */
+}
 
-/* 
-.footer button.active{
+.clearAll {
+    border: none;
+    outline: none;
+    background: #1b72d4;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: .2rem;
+    margin-left: .5rem;
+    padding: .3rem .5rem;
+    color: #fff;
+    opacity: .6;
+    pointer-events: none;
+}
+
+.footer button.active {
     opacity: 1;
     pointer-events: auto;
-} */
-
-
+}

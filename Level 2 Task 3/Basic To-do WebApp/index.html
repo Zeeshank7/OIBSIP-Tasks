@@ -18,14 +18,11 @@
         <div class="inputContainer">
 
             <input type="text" placeholder="Add New Task" id="newTaskInput">
-            <button title="Add Task" id="addTaskBtn" class="addBtn" > <i class="fas fa-plus"></i> </button>
-            <button title="Delete All" id="delAllBtn" onclick="deleteAll()" class="clearAll"> Clear list </button>
+            <button title="Add Task" id="addTaskBtn" class="addBtn"> <i class="fas fa-plus"></i> </button>
 
         </div>
 
-
         <ul class="List" id="List">
-            <!-- Data comes from local storage  <i class="fas fa-file-check"></i>-->
 
             <!-- <li class="listEl">
                     <input type="text" class="text"  readonly>
@@ -35,16 +32,14 @@
 
         </ul>
 
-<!-- 
         <div class="footer">
-            <span> your pending tasks: <span class="pending"></span> </span>
-            <button title="Delete All" id="delAllBtn" onclick="deleteAll()" class="clearAll"> Remove All </button>
-        </div> -->
+            <span> your pending tasks: <span class="pending" id="pendingNum"></span> </span>
+            <button title="Delete All" id="delAllBtn" onclick="deleteAll()" class="clearAll"> Clear list </button>
+        </div>
 
     </div>
 
 </body>
 <script src="main.js"></script>
-<!-- <script src="app.js"></script> -->
 
 </html>
